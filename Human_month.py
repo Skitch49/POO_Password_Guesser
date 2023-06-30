@@ -24,4 +24,6 @@ class Human_month(Date):
             month_number = int(date_obj.strftime("%m"))
             return english_months[month_number]
         
+    def polymorphysme(self):
+        print('le polymorphysme c\'est naze')
     

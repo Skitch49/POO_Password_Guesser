@@ -24,5 +24,9 @@ class Date:
         day, month, year = self.date.split('/')
         date_obj = datetime.datetime(int(year), int(month), int(day))
         return date_obj.strftime("%y")
+    
+    def polymorphysme(self):
+        print('le polymorphysme c\'est génial')
+
 
 
