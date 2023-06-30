@@ -1,85 +1,41 @@
-# PasswordGuesser
+# Password Guesser - Projet en programmation orientée objet Python
+Ce projet, appelé Password Guesser, est développé en utilisant le paradigme de la programmation orientée objet (POO) en Python. Le programme vise à générer différentes possibilités de mots de passe en manipulant des mots et des dates.
 
-PasswordGuesser est un projet visant à simuler la création de mots de passe d'utilisateurs sur le web à partir d'informations données. L'idée principale étant de faire prendre conscience aux utilisateur de la faiblesse générale de leurs mots de passe et de la simplicité de piratage qui est en jeu.
+## Le polymorphisme
+Le polymorphisme en programmation orientée objet (POO) est un concept qui permet à des objets de classes différentes de répondre de manière spécifique à une même méthode. En d'autres termes, le polymorphisme permet d'utiliser des objets de différentes classes de manière interchangeable en appelant une méthode commune, mais avec des comportements spécifiques à chaque classe.
 
-## Objectif
-L'objectif premier pour ce cours est de pratiquer l'Orienté Objet, sujet initial du cours pour lequel à été réalisé ce projet. Une interface web devra également être réalisée et sera in fine mise en ligne.
+Le polymorphisme dans le code ce trouve dans la classe Human month ou la méthode polymorphysme est redéfini car elle existe aussi dans la classe mère Date
 
-## Technos
-Par souci de simplicité, les techologies suivantes seront obligatoires : 
-- HTML & CSS
-- JAVASCRIPT (natif)
-- PYTHON (natif)
+## Utilisation de l'encapsulation
 
-Le HTML & le CSS seront utilisés pour générer l'interface graphique web utilisateur. L'utilisation d'un template trouvé sur le net est fortement recommandé afin d'obtenir un résultat propre et professionnel.
+L'encapsulation en programmation orientée objet (POO) est un concept qui regroupe les données et les méthodes associées dans une seule entité appelée classe. L'objectif principal de l'encapsulation est de cacher l'implémentation interne de la classe et de fournir un ensemble d'interfaces publiques pour interagir avec l'objet.
+L'encapsulation permet de définir les données d'une classe comme des attributs privés, c'est-à-dire qu'ils ne peuvent être accédés directement depuis l'extérieur de la classe. Au lieu de cela, l'accès aux données se fait par des méthodes spéciales appelées accesseurs (getters) et mutateurs (setters). Ces méthodes fournissent une interface contrôlée pour lire et modifier les valeurs des attributs.
 
-Le JavaScript ne devra être utilisé qu'en natif, et ne devra avoir aucun framework d'implémenté.
+L'encapsulation ce trouve dans les constructeurs des classes. Mais en python les préfixe public, private & protected n'existe pas
 
-Le code réalisé en Python devra également être natif. Des librairies peuvent être utilisées, mais aucun framework n'est autorisé. L'ensemble du code devra être réalisé en orienté objet uniquement, et le fichier de lancement du script ne devra contenir qu'une seule ligne (éventuellement une de plus pour réaliser un import).
+## Utilisation de la composition
+La composition en programmation orientée objet (POO) est un concept qui permet de créer des relations entre les objets où un objet contient d'autres objets en tant que parties composantes. Cela signifie qu'un objet est composé d'autres objets et que la durée de vie de ces objets composants est liée à celle de l'objet conteneur.
 
-NB : Pour pouvoir exécuter un script python depuis le JavaScript, vous aurez peut-etre besoin d'utiliser un framework ou micro-framework, du type Flask par exemple. Vous pourrez l'implémenter une fois votre programme python fonctionnel sur la génération des mots de passe. 
+## Utilisation de l'héritage
+L'héritage en programmation orientée objet (POO) est un mécanisme qui permet à une classe de dériver des propriétés et du comportement d'une autre classe appelée classe parent ou classe de base. La classe dérivée, également appelée classe enfant ou classe dérivée, hérite des attributs (variables) et des méthodes (fonctions) de la classe parent.
 
-## interface graphique
+L'héritage est plusieurs fois dans le projet, Les classes Leet Lower,Leet Upper,First letter,Strip accents,Uppercase & Lowercase sont des classes filles de Word. Human month est une classe fille de Date
 
-L'interface graphique devra présenter un formulaire dynamique à l'utilisateur. Celui-ci pourra : 
-- renseigner un nombre de mots illimité (1 mot par champs) ;
-- renseigner un nombre de dates illimité (1 date par champs).
+## Interface
+En programmation orientée objet (POO), une interface est une spécification abstraite d'un ensemble de méthodes qu'une classe doit implémenter. Elle définit un contrat que les classes doivent respecter lorsqu'elles prétendent implémenter cette interface. En d'autres termes, une interface définit les méthodes qu'une classe doit fournir, mais ne spécifie pas comment elles doivent être implémentées.
 
-Une fois le formulaire soumi, les informations devront être envoyées en asynchrone au programme python, qui réalisera l'ensemble du traitement des données. Ce programme devra donc renvoyer une liste de mots de passe générés à partir des informations fournies au format JSON, de telle sorte que la page web initiale pourra les afficher dans un tableau filtrable (utilisation de DataTables autorisée).
+Dans le code DateInterface est l'interface de la class Date
 
-## Options du Guesser
+## Utilisation de méthodes et attributs d'objets
+L'utilisation de méthodes et attributs d'objets en programmation orientée objet (POO) fait référence à l'accès et à l'utilisation des fonctionnalités fournies par les objets d'une classe.
+Une classe est une structure de programmation qui définit un ensemble de comportements et d'attributs communs à un groupe d'objets. Chaque objet créé à partir de cette classe possède ses propres attributs et peut exécuter des méthodes spécifiques définies dans la classe.
 
-Le formulaire ainsi que le programme devront proposer de choisir parmis plusieurs options pour la génération des mots de passe.
+## Utilisation de méthodes et attributs statiques
+L'utilisation de méthodes et attributs statiques en programmation orientée objet (POO) fait référence à l'accès et à l'utilisation de fonctionnalités qui sont associées à la classe elle-même plutôt qu'à une instance spécifique de la classe.
+Dans la POO, une méthode statique est une méthode qui est définie au niveau de la classe plutôt qu'au niveau de l'objet. Elle peut être invoquée directement sur la classe elle-même, sans nécessiter la création d'une instance de la classe. Les méthodes statiques sont souvent utilisées pour implémenter des fonctionnalités utilitaires ou des opérations qui ne dépendent pas de l'état spécifique de l'objet.
 
-**Maximum 5 éléments par combinaison**
+## Utilisation de méthodes et attributs de classe
+L'utilisation de méthodes et attributs de classe en programmation orientée objet (POO) fait référence à l'accès et à l'utilisation de fonctionnalités qui sont associées à la classe elle-même plutôt qu'à une instance spécifique de la classe.
+Les méthodes de classe, également appelées méthodes statiques liées à la classe, sont des méthodes qui agissent sur la classe dans son ensemble plutôt que sur une instance particulière de la classe. Elles sont définies au niveau de la classe et utilisent souvent les attributs de classe pour effectuer des opérations. Les méthodes de classe sont généralement utilisées pour implémenter des fonctionnalités qui sont liées à la classe en tant qu'entité globale, mais qui ne nécessitent pas l'accès aux attributs spécifiques des instances.
 
-### Options pour les mots
-- Basculer toutes les lettres en minuscule
-- Basculer toutes les lettres en majuscule
-- Basculer la première lettre en majuscule
-- Retirer les accents
-- Utiliser le L33T (trouver toutes les combinaisons possibles)
-
-NB : Combinaisons L33T à prendre en compte : 
-- a => 4
-- e => 3
-- i => 1
-- o => 0
-- l => 1
-- s => 5
-- b => 8
-- t => 7
-- z => 2
-- g => 6
-
-### Options pour les dates
-- Séparer les informations des dates pour les combiner avec les mots (comportement par défaut)
-- Utiliser les nombres des dates
-- Transformer les dates en langage humain pour les mois
-- Utiliser l'année sur 2 chiffres
-- Utiliser l'année sur 4 chiffres
-- Ajouter la possibilité de choisir la langue utilisée pour récupérer les noms des jours / mois
-
-### Options caractères spéciaux
-- Ajouter les caractères spéciaux les plus communs (.$?!*)
-- Ajouter tous les caractères spéciaux
-- Nombre de caractères spéciaux maximums dans la combinaison ?
-
-
-## Groupes
-Les projets sont à réaliser de manière individuelle mais l'entraide est fortement recommandée.
-La notation se fera le dernier jour consacré à cette matière.
-
-## Étapes 
-
-1. faire le design HTML/CSS, y inclure l'ensemble du formulaire (avec toutes les options)
-2. Attaquer le programme Python
-  - Si vous n'êtes pas (encore) à l'aise en POO, commencez en procédural !
-  - Traitez 1 par 1, les possibilités du formulaire.
-3. Faire intéragir le formulaire et le python grâce à la mise en place de Flask, qui vous permettra d'appler le python depuis le JavaScript, en AJAX.
-4. Intégrer les mots de passe générés dans un tableau HTML. Le rendre "filtrable" pour vérifier l'existence d'un mot de passe spécifique.
-
-
-## Liens utiles Design Pattern
-https://en.wikipedia.org/wiki/Design_Patterns
-https://en.wikipedia.org/wiki/Software_design_pattern
+Voici un exemple dans le code de méthode de classe
