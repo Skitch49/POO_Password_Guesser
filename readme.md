@@ -5,7 +5,7 @@ Ce projet, appelé Password Guesser, est développé en utilisant le paradigme d
 Le polymorphisme en programmation orientée objet (POO) est un concept qui permet à des objets de classes différentes de répondre de manière spécifique à une même méthode. En d'autres termes, le polymorphisme permet d'utiliser des objets de différentes classes de manière interchangeable en appelant une méthode commune, mais avec des comportements spécifiques à chaque classe.
 
 Le polymorphisme dans le code ce trouve dans la classe Human month ou la méthode polymorphysme est redéfini car elle existe aussi dans la classe mère Date
-[Le polymorphisme dans le code ]([pour aller ici](https://github.com/Skitch49/POO_Password_Guesser/blob/efeb0f4293d0c13985970edca5facf45c1b3282e/Human_month.py#L27))
+[Polymorphisme](https://github.com/Skitch49/POO_Password_Guesser/blob/efeb0f4293d0c13985970edca5facf45c1b3282e/Human_month.py#L27)
 
 ## Utilisation de l'encapsulation
 
